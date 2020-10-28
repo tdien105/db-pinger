@@ -1,0 +1,4 @@
+.vscode
+dbs/__pycache__
+Dockerfile
+.dockerignore
