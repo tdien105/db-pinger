@@ -1,0 +1,5 @@
+statsd
+pyyaml
+mysql-connector-python
+cassandra-driver
+pymssql
