@@ -1,7 +1,7 @@
 ---
 
 statsd:
-  - ip: localhost
+  - ip: 10.163.32.238
     port: 8125
     interval: 5 # intervew between checks and send to statsd daemon
 databases:
