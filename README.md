@@ -7,5 +7,5 @@ These metrics will be included:
 
 ### How to run
 - Edit the config file (config.yaml) accordingly to your need
-- Build the docker image: ```docker build -t pinger .```
-- Run the container: ```docker run -it pinger```
+- Build the docker image: ```docker build -t db-pinger .```
+- Run the container: ```docker run -it db-pinger```
