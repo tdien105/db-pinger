@@ -1,5 +1,6 @@
 ### DB pinger service
 This is a simple tool to check DB services and emit metrics to statsd daemon
+
 The metrics included:
 - The status of DB endpoint: stats.gauges.mysql001_status 0|1
 - The latency of the query (query content should be defined in config first): stats.timer.mysql001_duration value|ms
