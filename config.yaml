@@ -3,7 +3,7 @@
 statsd:
   - ip: 10.163.32.238
     port: 8125
-    interval: 5 # intervew between checks and send to statsd daemon
+    interval: 5 # interval between checks
 databases:
   - type: mysql
     q: 'select version();' # default query, this can be overwritten on endpoint's part
