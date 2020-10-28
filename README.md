@@ -9,7 +9,8 @@ These metrics will be included:
 - Edit the config file (config.yaml) accordingly to your need
 - Build the docker image: ```docker build -t db-pinger .```
 - Run the container:
-```docker run -it db-pinger
+```
+docker run -it db-pinger
 
 checking host: mysql001 ... UP ([('information_schema',), ('mysql',), ('performance_schema',), ('sys',)])
 checking host: mysql002 ... DOWN (2003: Can't connect to MySQL server on '10.163.32.238:3306' (111 Connection refused))
