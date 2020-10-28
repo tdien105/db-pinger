@@ -1,45 +1,45 @@
 ---
-
 statsd:
-  - ip: 10.163.32.238
-    port: 8125
-    interval: 5 # intervew between checks and send to statsd daemon
+- ip: 10.163.32.238
+  port: 8125
+  interval: 5 # intervew between checks and send to statsd daemon
+  
 databases:
-  - type: mysql
-    q: 'select version();' # default query, this can be overwritten on endpoint's part
-    timeout: 5 # default timeout, this can be overwritten on endpoint's part
-    endpoints:
-      - hostname: mysql001
-        user: root
-        password: secret
-        port: 3307
-        ip: 10.163.32.238
-        timeout: 5
-        q: 'show databases;'
-      - hostname: mysql002
-        user: root
-        password: secret
-        port: 3306
-        ip: 10.163.32.238
+- type: mysql
+  q: 'select version();' # default query, this can be overwritten on endpoint's part
+  timeout: 5 # default timeout, this can be overwritten on endpoint's part
+  endpoints:
+    - hostname: mysql001
+      user: root
+      password: secret
+      port: 3307
+      ip: 10.163.32.238
+      timeout: 5
+      q: 'show databases;'
+    - hostname: mysql002
+      user: root
+      password: secret
+      port: 3306
+      ip: 10.163.32.238
 
-  - type: mssql
-    q: 'Select @@version'
-    timeout: 5
-    endpoints:
-      - hostname: mssql001
-        user: sa
-        password: 'yourStrong(!)Password'
-        port: 1433
-        ip: 10.163.32.238
-        timeout: 5
+- type: mssql
+  q: 'Select @@version'
+  timeout: 5
+  endpoints:
+    - hostname: mssql001
+      user: sa
+      password: 'yourStrong(!)Password'
+      port: 1433
+      ip: 10.163.32.238
+      timeout: 5
 
-  - type: cassandra
-    q: 'SELECT release_version FROM system.local'
-    timeout: 5
-    endpoints:
-      - hostname: cassandra001
-        user: ''
-        password: ''
-        port: 9042
-        ip: 10.163.32.238
-        timeout: 5
+- type: cassandra
+  q: 'SELECT release_version FROM system.local'
+  timeout: 5
+  endpoints:
+    - hostname: cassandra001
+      user: ''
+      password: ''
+      port: 9042
+      ip: 10.163.32.238
+      timeout: 5

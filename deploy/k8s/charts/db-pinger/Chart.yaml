@@ -1,0 +1,16 @@
+name: db-pinger
+version: 1 # not a complete semver version because the build process fills in the minor and patch components
+description: DB connectivity checking tool
+keywords:
+  - db-pinger
+    dre
+home: https://git.taservs.net/
+sources:
+  - https://git.taservs.net/
+maintainers:
+  - name: Dien Phan
+    email: dphan@axon.com
+
+engine: gotpl # The name of the template engine (optional, defaults to gotpl)
+icon: ''
+deprecated: false
