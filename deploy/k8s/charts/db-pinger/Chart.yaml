@@ -4,12 +4,12 @@ description: DB connectivity checking tool
 keywords:
   - db-pinger
     dre
-home: https://git.taservs.net/
+home: https://github.com/
 sources:
-  - https://git.taservs.net/
+  - https://github.com/
 maintainers:
   - name: Dien Phan
-    email: dphan@axon.com
+    email: tdien105@gmail.com
 
 engine: gotpl # The name of the template engine (optional, defaults to gotpl)
 icon: ''
